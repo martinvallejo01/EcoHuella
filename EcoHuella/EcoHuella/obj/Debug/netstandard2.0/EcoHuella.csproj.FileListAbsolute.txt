@@ -3,7 +3,6 @@ C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\bin\Debug\netstandard2
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\bin\Debug\netstandard2.0\EcoHuella.dll
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\bin\Debug\netstandard2.0\EcoHuella.pdb
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\UserPages\UserData.xaml.g.cs
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.csproj.CoreCompileInputs.cache
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.AssemblyInfoInputs.cache
@@ -14,3 +13,5 @@ C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\FootPrintPages\Travel.xaml.g.cs
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\FootPrintPages\Home.xaml.g.cs
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\FootPrintPages\FootPrint.xaml.g.cs
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\UserPages\Page1.xaml.g.cs

@@ -28,6 +28,8 @@
                     </TableSection>
                 </TableRoot>
             </TableView>
+            <Label x:Name="footPrintLabel" HorizontalOptions="Center"/>
+            <Button Text="Submit" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

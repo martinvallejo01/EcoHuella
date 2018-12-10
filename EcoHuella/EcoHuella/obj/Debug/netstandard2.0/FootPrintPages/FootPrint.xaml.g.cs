@@ -35,6 +35,9 @@ namespace EcoHuella.FootPrintPages {
         private global::Xamarin.Forms.Label HomeFoot;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label footPrintLabel;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FootPrint));
             FoodCell = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ViewCell>(this, "FoodCell");
@@ -43,6 +46,7 @@ namespace EcoHuella.FootPrintPages {
             TravelFoot = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "TravelFoot");
             HomeCell = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ViewCell>(this, "HomeCell");
             HomeFoot = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "HomeFoot");
+            footPrintLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "footPrintLabel");
         }
     }
 }

@@ -25,7 +25,7 @@ namespace EcoHuella.FootPrintPages
 			InitializeComponent ();
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
             bool planeAproved, busAproved, carAproved;
 
@@ -35,26 +35,24 @@ namespace EcoHuella.FootPrintPages
 
             if (!planeAproved || !busAproved || !carAproved)
             {
-                DisplayAlert("Error", "Check you inputs, something went terribly wrong", "OK");
+                await DisplayAlert("Error", "Check you inputs, something went terribly wrong", "OK");
             }
 
             double engineMult = EngineFactor[engine.SelectedIndex];
             double gasMult = GasFactor[gasoline.SelectedIndex];
             double peopleMult = PeopleInCarFactor[people.SelectedIndex];
 
-            Models.Travel travel = new Models.Travel
-            {
-                AirPlane = plane,
-                Bus = bus,
-                CarKm = car,
-                CarEngine = engineMult,
-                CarGas = gasMult,
-                CarPeople = peopleMult
-            };
+            FootPrint.AirPlane = plane;
+            FootPrint.Bus = bus;
+            FootPrint.CarKm = car;
+            FootPrint.CarEngine = engineMult;
+            FootPrint.CarGas = gasMult;
+            FootPrint.CarPeople = peopleMult;
 
-            Double footprint = travel.CalculateFootPrint();
-
-            DisplayAlert("Your Travel FootPrint is", footprint.ToString(), "OK");
+            Double footprint = FootPrint.TravelFootPrint();
+            App.DbContext.Update(FootPrint);
+            await DisplayAlert("Your Travel FootPrint is", footprint.ToString(), "OK");
+            await App.DbContext.SaveChangesAsync();
 
         }
     }

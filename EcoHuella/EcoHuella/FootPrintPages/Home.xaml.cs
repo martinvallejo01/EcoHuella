@@ -20,17 +20,16 @@ namespace EcoHuella.FootPrintPages
             InitializeComponent();
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            Models.Home home = new Models.Home
-            {
-                Size = Double.Parse(size.Text),
-                Energy = Double.Parse(energy.Text),
-                Population = int.Parse(population.Text)
-            };
 
-            DisplayAlert("Your Home FootPrint is:", home.CalculateFootPrint().ToString(), "OK");
-            FootPrint.Home = home;
+            FootPrint.Size = Double.Parse(size.Text);
+            FootPrint.Energy = Double.Parse(energy.Text);
+            FootPrint.Population = int.Parse(population.Text);
+
+            await DisplayAlert("Your Home FootPrint is:", FootPrint.HomeFootPrint().ToString(), "OK");
+            App.DbContext.Update(FootPrint);
+            await App.DbContext.SaveChangesAsync();
         }
     }
 }

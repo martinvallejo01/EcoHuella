@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using EcoHuella.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 namespace EcoHuella.FootPrintPages
 {
@@ -25,29 +27,28 @@ namespace EcoHuella.FootPrintPages
         int[] cigarretesData = { 3, 10, 24, 37, 52 };
 
         EcoFootPrint FootPrint { get; set; }
-        public Food (EcoFootPrint ecoFootPrint)
+        public Food (EcoFootPrint ecoFootPrintID)
 		{
-            FootPrint = ecoFootPrint;
+            FootPrint = ecoFootPrintID;
 			InitializeComponent ();
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            Models.Food food = new Models.Food
-            {
-                Fruit = fruitData[fruits.SelectedIndex],
-                Vegetable = vegiesData[vegies.SelectedIndex],
-                Bread = breadData[bread.SelectedIndex],
-                Dairy = dairyData[dairy.SelectedIndex],
-                Beer = beerData[beer.SelectedIndex],
-                Cow = cowData[cow.SelectedIndex],
-                Pig = pigData[pig.SelectedIndex],
-                Chicken = chickenData[chicken.SelectedIndex],
-                Fish = fishData[fish.SelectedIndex],
-                Cigarretes = cigarretesData[cigarretes.SelectedIndex]
-            };
-            FootPrint.Food = food;
-            DisplayAlert("Your food footPrint is", food.CalculateFootPrint().ToString() , "OK");
+            FootPrint.Fruit = fruitData[fruits.SelectedIndex];
+            FootPrint.Vegetable = vegiesData[vegies.SelectedIndex];
+            FootPrint.Bread = breadData[bread.SelectedIndex];
+            FootPrint.Dairy = dairyData[dairy.SelectedIndex];
+            FootPrint.Beer = beerData[beer.SelectedIndex];
+            FootPrint.Cow = cowData[cow.SelectedIndex];
+            FootPrint.Pig = pigData[pig.SelectedIndex];
+            FootPrint.Chicken = chickenData[chicken.SelectedIndex];
+            FootPrint.Fish = fishData[fish.SelectedIndex];
+            FootPrint.Cigarretes = cigarretesData[cigarretes.SelectedIndex];
+
+            App.DbContext.Update(FootPrint);
+            await DisplayAlert("Your food footPrint is", FootPrint.FoodFootPrint().ToString() , "OK");
+            await Navigation.PopAsync();
         }
     }
 }

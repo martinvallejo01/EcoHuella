@@ -10,16 +10,16 @@ namespace EcoHuella
 {
     public partial class App : Application
     {
-        public Context Context { get; set; }
+        public static Context DbContext { get; set; }
 
         public App(String dbPath)
         {
             Debug.WriteLine($"Database located at: {dbPath}");
-            Context = new Context(dbPath);
+            DbContext = new Context(dbPath);
 
             InitializeComponent();
 
-            MainPage = new UserData();
+            MainPage = new NavigationPage(new UserData());
         }
 
         protected override void OnStart()

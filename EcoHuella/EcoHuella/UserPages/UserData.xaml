@@ -2,16 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcoHuella.UserPages.UserData"
-             Title="Your Data!">
+             Title="Your Data!"
+             Padding="20">
     <ContentPage.Content>
         <StackLayout>
-            <Grid>
+            <Grid VerticalOptions="StartAndExpand">
                 <Label Text="Name:" Grid.Column="0" Grid.Row="0"/>
                 <Entry x:Name="nameEntry" Placeholder="(ej: Martin Freire)" Grid.Column="1" Grid.Row="0"/>
                 <Label Text="Student ID:" Grid.Column="0" Grid.Row="1"/>
                 <Entry x:Name="idEntry" Placeholder="(ej: 136753)" Keyboard="Numeric" Grid.Column="1" Grid.Row="1"/>
                 <Label Text="Mail:" Grid.Column="0" Grid.Row="2"/>
                 <Entry x:Name="mailEntry" Placeholder="(ej: martin.vallejo@gmail.com)" Grid.Column="1" Grid.Row="2"/>
+                <ListView x:Name="userList" ItemSelected="UserList_ItemSelected" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="10">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </Grid>
             <Button Text="Submit" Clicked="Button_Clicked"/>
         </StackLayout>
