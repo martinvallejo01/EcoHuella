@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using EcoHuella;
+using EcoHuella.Models;
 
 namespace EcoHuella.FootPrintPages
 {
@@ -18,8 +18,10 @@ namespace EcoHuella.FootPrintPages
         double[] GasFactor = { 2900, 2038 };
         double[] PeopleInCarFactor = { 0.25, 0.5, 0.75, 1 };
 
-        public Travel ()
+        EcoFootPrint FootPrint;
+        public Travel (EcoFootPrint ecoFootPrint)
 		{
+            FootPrint = ecoFootPrint;
 			InitializeComponent ();
 		}
 

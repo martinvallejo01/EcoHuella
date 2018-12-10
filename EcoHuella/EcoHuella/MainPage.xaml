@@ -14,7 +14,7 @@
 
     <NavigationPage Title="Travel">
         <x:Arguments>
-            <footPrint:Travel/>
+            <footPrint:FootPrint/>
         </x:Arguments>
     </NavigationPage>
     

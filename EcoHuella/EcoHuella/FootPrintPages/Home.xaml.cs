@@ -13,8 +13,10 @@ namespace EcoHuella.FootPrintPages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Home : ContentPage
 	{
-		public Home ()
+        EcoFootPrint FootPrint;
+		public Home (EcoFootPrint ecoFootPrint)
 		{
+            FootPrint = ecoFootPrint;
             InitializeComponent();
 		}
 
@@ -27,8 +29,8 @@ namespace EcoHuella.FootPrintPages
                 Population = int.Parse(population.Text)
             };
 
-            DisplayAlert("Your Home FootPrint is:", home.FootPrint().ToString(), "OK");
-                
+            DisplayAlert("Your Home FootPrint is:", home.CalculateFootPrint().ToString(), "OK");
+            FootPrint.Home = home;
         }
     }
 }

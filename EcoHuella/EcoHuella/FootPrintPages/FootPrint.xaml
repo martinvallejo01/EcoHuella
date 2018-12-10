@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcoHuella.FootPrintPages.FootPrint">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView>
+                <TableRoot>
+                    <TableSection Title="FootPrint">
+                        <ViewCell x:Name="FoodCell" Tapped="FoodCell_Tapped">
+                            <StackLayout Orientation="Horizontal" Padding="13">
+                                <Label Text="Food FootPrint" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="None" x:Name="FoodFoot"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell x:Name="TravelCell" Tapped="TravelCell_Tapped">
+                            <StackLayout Orientation="Horizontal" Padding="13">
+                                <Label Text="Travel FootPrint" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="None" x:Name="TravelFoot"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell x:Name="HomeCell" Tapped="HomeCell_Tapped">
+                            <StackLayout Orientation="Horizontal" Padding="13">
+                                <Label Text="Home FootPrint" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="None" x:Name="HomeFoot"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

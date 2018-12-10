@@ -24,9 +24,10 @@ namespace EcoHuella.FootPrintPages
         int[] fishData = { 217, 425, 711, 998, 1298 };
         int[] cigarretesData = { 3, 10, 24, 37, 52 };
 
-
-        public Food ()
+        EcoFootPrint FootPrint { get; set; }
+        public Food (EcoFootPrint ecoFootPrint)
 		{
+            FootPrint = ecoFootPrint;
 			InitializeComponent ();
 		}
 
@@ -45,7 +46,7 @@ namespace EcoHuella.FootPrintPages
                 Fish = fishData[fish.SelectedIndex],
                 Cigarretes = cigarretesData[cigarretes.SelectedIndex]
             };
-
+            FootPrint.Food = food;
             DisplayAlert("Your food footPrint is", food.CalculateFootPrint().ToString() , "OK");
         }
     }
