@@ -6,8 +6,8 @@ namespace EcoHuella.Models
 {
     public class Food
     {
-        public int Id { get; set; }
-
+        public int FoodID { get; set; }
+        public DateTime MeasureDate { get; set; }
         public int Fruit { get; set; }
         public int Vegetable { get; set; }
         public int Bread { get; set; }
@@ -18,6 +18,9 @@ namespace EcoHuella.Models
         public int Dairy { get; set; }
         public int Cigarretes { get; set; }
         public int Beer { get; set; }
+
+        public EcoFootPrint FootPrint { get; set; }
+        public int FootPrintID { get; set; }
 
         public Double CalculateFootPrint()
         {

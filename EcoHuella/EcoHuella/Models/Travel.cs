@@ -6,14 +6,17 @@ namespace EcoHuella.Models
 {
     public class Travel
     { 
-        public int Id;
-
+        public int TravelID;
+        public DateTime MeasureDate { get; set; }
         public int Bus { get; set; }
         public int AirPlane { get; set; }
         public int CarKm { get; set; }
         public double CarEngine { get; set; }
         public double CarGas { get; set; }
         public double CarPeople { get; set; }
+
+        public EcoFootPrint FootPrint { get; set; }
+        public int FootPrintID { get; set; }
 
         public double CalculateFootPrint()
         {
