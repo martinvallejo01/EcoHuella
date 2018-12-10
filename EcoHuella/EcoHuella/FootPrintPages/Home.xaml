@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcoHuella.FootPrintPages.Home">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Label Text="Energy in kWh" Grid.Column="0" Grid.Row="0"/>
+                <Entry x:Name="energy" Placeholder="(ej. 587.65)" Grid.Column="1" Grid.Row="0" Keyboard="Numeric"/>
+                <Label Text="We require your house size, for reference:" Grid.Row="1" Grid.ColumnSpan="2"/>
+                <Label Text="A apartment is 50 square meters, A whole floor of a building 150 square meters" Grid.ColumnSpan="2" Grid.Row="2"/>
+                <Label Text="A full house is 500 square meters, and a mansion is 500 square meters" Grid.ColumnSpan="2" Grid.Row="3" />
+
+                <Label Text="House Size" Grid.Column="0" Grid.Row="4"/>
+                <Entry x:Name="size" Placeholder="(ej. 17273)" Grid.Column="1" Grid.Row="4" Keyboard="Numeric"/>
+            </Grid>
+            <Button Text="Submit" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

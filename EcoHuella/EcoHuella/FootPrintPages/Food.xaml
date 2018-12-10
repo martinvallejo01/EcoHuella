@@ -12,7 +12,7 @@
                 <Label Text="Times a Week" Grid.Column="1" Grid.Row="0"/>
 
                 <Label Text="Fruit" Grid.Row="1" Grid.Column="0"/>
-                <Picker x:Name="fuits" Grid.Row="1" Grid.Column="1">
+                <Picker x:Name="fruits" Grid.Row="1" Grid.Column="1">
                     <Picker.Items>
                         <x:String>0 - 1</x:String>
                         <x:String>2 - 3</x:String>
@@ -87,7 +87,7 @@
                         <x:String>10 or more</x:String>
                     </Picker.Items>
                 </Picker>
-
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\Models\Travel.cs
                 <Label Text="Chicken" Grid.Row="8" Grid.Column="0"/>
                 <Picker x:Name="chicken" Grid.Row="8" Grid.Column="1">
                     <Picker.Items>

@@ -32,7 +32,7 @@ namespace EcoHuella.Models
             r += Cigarretes;
             r += Beer;
 
-            return r;
+            return r/10000;
         }
     }
 }
