@@ -8,12 +8,18 @@ namespace EcoHuella.Models
     {
 
         public int FootPrintID { get; set; }
+
         public Home Home { get; set; }
+        public int HomeID { get; set; }
+
         public Travel Travel { get; set; }
-        public Food Food { get; set; }
+        public int TravelID { get; set; }
 
         public User User { get; set; }
         public int UserID { get; set; }
+
+        public Food Food { get; set; }
+        public int FoodID { get; set; }
 
         public Double FootPrint()
         {

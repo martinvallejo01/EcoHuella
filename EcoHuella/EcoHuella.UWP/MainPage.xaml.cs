@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -21,7 +22,9 @@ namespace EcoHuella.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new EcoHuella.App());
+            var dbPath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "database.sqlite");
+
+            LoadApplication(new EcoHuella.App(dbPath));
         }
     }
 }

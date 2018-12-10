@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EcoHuella.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using EcoHuella;
 
 namespace EcoHuella.UserPages
 {
@@ -19,6 +21,12 @@ namespace EcoHuella.UserPages
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            User user = new User
+            {
+                UserID = int.Parse(idEntry.Text),
+                Name = nameEntry.Text,
+                Mail = mailEntry.Text
+            };
 
         }
     }

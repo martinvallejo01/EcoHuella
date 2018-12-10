@@ -16,7 +16,6 @@ namespace EcoHuella.Models
         public double CarPeople { get; set; }
 
         public EcoFootPrint FootPrint { get; set; }
-        public int FootPrintID { get; set; }
 
         public double CalculateFootPrint()
         {
