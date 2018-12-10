@@ -87,7 +87,7 @@
                         <x:String>10 or more</x:String>
                     </Picker.Items>
                 </Picker>
-C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\Models\Travel.cs
+
                 <Label Text="Chicken" Grid.Row="8" Grid.Column="0"/>
                 <Picker x:Name="chicken" Grid.Row="8" Grid.Column="1">
                     <Picker.Items>
