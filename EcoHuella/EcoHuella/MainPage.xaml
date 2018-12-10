@@ -12,9 +12,9 @@
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Food">
+    <NavigationPage Title="Travel">
         <x:Arguments>
-            <footPrint:Food/>
+            <footPrint:Travel/>
         </x:Arguments>
     </NavigationPage>
     

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcoHuella.FootPrintPages.Travel">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="How much time do you spend in a plane. Recall that:"/>
+            <Label Text="A flight to Los Angeles or Madrid take 10 hours"/>
+            <Label Text="One to Mexico, Chile or Argentina take 6 hours"/>
+            <Label Text="Peru, Colombia or Internal take 1 hour"/>
+            <Label Text="China or India 19 hours"/>
+            <Label Text="Don't forget you usualy return back"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Hours in a plane per year:" HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="hoursInPlane" Placeholder="(ej. 5)"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Hours in a bus per week:" HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="hoursInbus" Placeholder="(ej. 5)"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Kilometers in a car per week:" HorizontalOptions="StartAndExpand"/>
+                <Entry x:Name="kilometerIncar" Placeholder="(ej. 5)"/>
+            </StackLayout>
+
+            <Picker Title="Engine Type" x:Name="engine">
+                <Picker.Items>
+                    <x:String>Small (less tan 1400cc)  </x:String>
+                    <x:String>Medium (1400cc to 2100cc)</x:String>
+                    <x:String>Large (more tan 2100cc)  </x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker Title="Gasoline Type" x:Name="gasoline">
+                <Picker.Items>
+                    <x:String>Gas (less tan 1400cc)</x:String>
+                    <x:String>Diesell (1400cc to 2100cc)</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker Title="People in Car" x:Name="people">
+                <Picker.Items>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Text="Submit" Clicked="Button_Clicked"/>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

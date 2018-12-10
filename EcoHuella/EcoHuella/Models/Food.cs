@@ -18,5 +18,21 @@ namespace EcoHuella.Models
         public int Dairy { get; set; }
         public int Cigarretes { get; set; }
         public int Beer { get; set; }
+
+        public Double CalculateFootPrint()
+        {
+            Double r = Fruit;
+            r += Vegetable;
+            r += Bread;
+            r += Cow;
+            r += Pig;
+            r += Chicken;
+            r += Fish;
+            r += Dairy;
+            r += Cigarretes;
+            r += Beer;
+
+            return r;
+        }
     }
 }

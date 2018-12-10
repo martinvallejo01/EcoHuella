@@ -12,3 +12,4 @@ C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.dll
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.pdb
 C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\FootPrintPages\Food.xaml.g.cs
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\FootPrintPages\Travel.xaml.g.cs
