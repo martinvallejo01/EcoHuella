@@ -5,12 +5,15 @@
              Title="Your Data!">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Name:" HorizontalOptions="Center"/>
-            <Entry x:Name="nameEntry" Placeholder="(ej: Martin Freire)" HorizontalOptions="Center" />
-            <Label Text="Student ID:" HorizontalOptions="Center"/>
-            <Entry x:Name="idEntry" Placeholder="(ej: 136753)" Keyboard="Numeric" HorizontalOptions="Center"/>
-            <Label Text="Mail:" HorizontalOptions="Center"/>
-            <Entry x:Name="mailEntry" Placeholder="(ej: martin.vallejo@gmail.com)" HorizontalOptions="Center"/>
+            <Grid>
+                <Label Text="Name:" Grid.Column="0" Grid.Row="0"/>
+                <Entry x:Name="nameEntry" Placeholder="(ej: Martin Freire)" Grid.Column="1" Grid.Row="0"/>
+                <Label Text="Student ID:" Grid.Column="0" Grid.Row="1"/>
+                <Entry x:Name="idEntry" Placeholder="(ej: 136753)" Keyboard="Numeric" Grid.Column="1" Grid.Row="1"/>
+                <Label Text="Mail:" Grid.Column="0" Grid.Row="2"/>
+                <Entry x:Name="mailEntry" Placeholder="(ej: martin.vallejo@gmail.com)" Grid.Column="1" Grid.Row="2"/>
+            </Grid>
+            <Button Text="Submit" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

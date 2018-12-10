@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-10T05:25:09.313</Modified>
+      <Modified>2018-12-10T06:37:19.388</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella.UWP\bin\x86\Debug\EcoHuella.UWP.exe">
       <PackagePath>entrypoint\EcoHuella.UWP.exe</PackagePath>
-      <Modified>2018-12-10T05:25:08.353</Modified>
+      <Modified>2018-12-10T06:37:17.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -712,7 +712,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\bin\Debug\netstandard2.0\EcoHuella.dll">
       <PackagePath>EcoHuella.dll</PackagePath>
-      <Modified>2018-12-10T05:25:03.579</Modified>
+      <Modified>2018-12-10T06:37:09.672</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
@@ -859,11 +859,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-12-10T05:25:08.201</Modified>
+      <Modified>2018-12-10T06:37:17.573</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-12-10T05:25:08.201</Modified>
+      <Modified>2018-12-10T06:37:17.574</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -879,7 +879,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella.UWP\bin\x86\Debug\Core\EcoHuella.UWP.exe">
       <PackagePath>EcoHuella.UWP.exe</PackagePath>
-      <Modified>2018-12-10T05:25:09.307</Modified>
+      <Modified>2018-12-10T06:37:19.378</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

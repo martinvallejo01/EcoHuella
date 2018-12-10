@@ -13,6 +13,10 @@
 
                 <Label Text="House Size" Grid.Column="0" Grid.Row="4"/>
                 <Entry x:Name="size" Placeholder="(ej. 17273)" Grid.Column="1" Grid.Row="4" Keyboard="Numeric"/>
+
+                <Label Text="Amount of people living in the house" Grid.Column="0" Grid.Row="5"/>
+                <Entry x:Name="population" Placeholder="(ej. 3)" Grid.Column="1" Grid.Row="5" Keyboard="Numeric"/>
+                
             </Grid>
             <Button Text="Submit" Clicked="Button_Clicked"/>
         </StackLayout>

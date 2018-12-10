@@ -23,7 +23,8 @@ namespace EcoHuella.FootPrintPages
             Models.Home home = new Models.Home
             {
                 Size = Double.Parse(size.Text),
-                Energy = Double.Parse(energy.Text)
+                Energy = Double.Parse(energy.Text),
+                Population = int.Parse(population.Text)
             };
 
             DisplayAlert("Your Home FootPrint is:", home.FootPrint().ToString(), "OK");
