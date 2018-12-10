@@ -1,0 +1,9 @@
+﻿<Application
+    x:Class="EcoHuella.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EcoHuella.UWP"
+    RequestedTheme="Light">
+
+</Application>
+

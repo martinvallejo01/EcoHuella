@@ -6,5 +6,6 @@ namespace EcoHuella.Models
 {
     public class Home
     {
+
     }
 }

@@ -1,0 +1,1 @@
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella.UWP\EcoHuella.UWP.csproj;x86

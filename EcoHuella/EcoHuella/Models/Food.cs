@@ -10,6 +10,7 @@ namespace EcoHuella.Models
 
         public int Fruit { get; set; }
         public int Vegetable { get; set; }
+        public int Bread { get; set; }
         public int Cow { get; set; }
         public int Pig { get; set; }
         public int Chicken { get; set; }

@@ -1,0 +1,14 @@
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.csprojAssemblyReference.cache
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\bin\Debug\netstandard2.0\EcoHuella.deps.json
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\bin\Debug\netstandard2.0\EcoHuella.dll
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\bin\Debug\netstandard2.0\EcoHuella.pdb
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\UserPages\UserData.xaml.g.cs
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.csproj.CoreCompileInputs.cache
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.AssemblyInfoInputs.cache
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.AssemblyInfo.cs
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.dll
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\EcoHuella.pdb
+C:\Users\marti\source\repos\EcoHuella\EcoHuella\EcoHuella\obj\Debug\netstandard2.0\FootPrintPages\Food.xaml.g.cs

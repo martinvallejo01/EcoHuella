@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcoHuella.FootPrintPages.Food"
+             Title="Food"
+             Padding="20">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Calculate you food FootPrint"/>
+            <Grid>
+                <Label Text="Item" Grid.Column="0" Grid.Row="0"/>
+                <Label Text="Times a Week" Grid.Column="1" Grid.Row="0"/>
+
+                <Label Text="Fruit" Grid.Row="1" Grid.Column="0"/>
+                <Picker x:Name="fuits" Grid.Row="1" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>0 - 1</x:String>
+                        <x:String>2 - 3</x:String>
+                        <x:String>4 - 5</x:String>
+                        <x:String>6 - 7</x:String>
+                        <x:String>8 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Vegetables" Grid.Row="2" Grid.Column="0"/>
+                <Picker x:Name="vegies" Grid.Row="2" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>0 - 1</x:String>
+                        <x:String>2 - 3</x:String>
+                        <x:String>4 - 5</x:String>
+                        <x:String>6 - 7</x:String>
+                        <x:String>8 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Bread" Grid.Row="3" Grid.Column="0"/>
+                <Picker x:Name="bread" Grid.Row="3" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>2 - 3</x:String>
+                        <x:String>4 - 5</x:String>
+                        <x:String>6 - 7</x:String>
+                        <x:String>8 - 9</x:String>
+                        <x:String>10 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Dairy Products" Grid.Row="4" Grid.Column="0"/>
+                <Picker x:Name="dairy" Grid.Row="4" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>2 - 3</x:String>
+                        <x:String>4 - 5</x:String>
+                        <x:String>6 - 7</x:String>
+                        <x:String>8 - 9</x:String>
+                        <x:String>10 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Beer" Grid.Row="5" Grid.Column="0"/>
+                <Picker x:Name="beer" Grid.Row="5" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>2 - 3</x:String>
+                        <x:String>4 - 5</x:String>
+                        <x:String>6 - 7</x:String>
+                        <x:String>8 - 9</x:String>
+                        <x:String>10 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Cow" Grid.Row="6" Grid.Column="0"/>
+                <Picker x:Name="cow" Grid.Row="6" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>2 - 3</x:String>
+                        <x:String>4 - 5</x:String>
+                        <x:String>6 - 7</x:String>
+                        <x:String>8 - 9</x:String>
+                        <x:String>10 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Pig" Grid.Row="7" Grid.Column="0"/>
+                <Picker x:Name="pig" Grid.Row="7" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>2 - 3</x:String>
+                        <x:String>4 - 5</x:String>
+                        <x:String>6 - 7</x:String>
+                        <x:String>8 - 9</x:String>
+                        <x:String>10 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Chicken" Grid.Row="8" Grid.Column="0"/>
+                <Picker x:Name="chicken" Grid.Row="8" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>2 - 3</x:String>
+                        <x:String>4 - 5</x:String>
+                        <x:String>6 - 7</x:String>
+                        <x:String>8 - 9</x:String>
+                        <x:String>10 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Sea Food" Grid.Row="9" Grid.Column="0"/>
+                <Picker x:Name="fish" Grid.Row="9" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>2 - 3</x:String>
+                        <x:String>4 - 5</x:String>
+                        <x:String>6 - 7</x:String>
+                        <x:String>8 - 9</x:String>
+                        <x:String>10 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Cigarretes" Grid.Row="10" Grid.Column="0"/>
+                <Picker x:Name="cigarretes" Grid.Row="10" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>0 - 4</x:String>
+                        <x:String>5- 19</x:String>
+                        <x:String>20- 39</x:String>
+                        <x:String>40 - 99</x:String>
+                        <x:String>100 or more</x:String>
+                    </Picker.Items>
+                </Picker>
+            </Grid>
+            <Button Text="Submit" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
